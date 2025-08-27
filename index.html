@@ -12,10 +12,11 @@
             background-size: cover;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow-y: auto;
+            /* remove align-items: center */
+            min-height: 100vh;   /* instead of fixed height */
+            overflow-y: auto;    /* enable scroll */
         }
+
 
         .resume-container {
             background: white;
@@ -139,3 +140,4 @@
     </div>
 </body>
 </html>
+
