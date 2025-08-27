@@ -1,143 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url("./geometric-bokeh.jpg") no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            /* remove align-items: center */
-            min-height: 100vh;   /* instead of fixed height */
-            overflow-y: auto;    /* enable scroll */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivang Gaur - Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("./geometric-bokeh.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      scroll-behavior: smooth;
+    }
 
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 12px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      color: #00bfff;
+    }
 
-        .resume-container {
-            background: white;
-            width: 85%;
-            max-width: 900px;
-            padding: 20px 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            margin: 20px;
-        }
+    /* Section styling */
+    .section {
+      padding: 80px 15% 60px;
+      background: white;
+      margin: 60px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      max-width: 1000px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+    .section p, .section li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-        .section {
-            margin-bottom: 25px;
-        }
+    /* Header (home) */
+    #home {
+      text-align: center;
+      background: rgba(255,255,255,0.9);
+    }
+    #home h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    #home h3 {
+      font-size: 20px;
+      color: #444;
+    }
 
-        .section h2 {
-            margin: 0;
-            font-size: 22px;
-            border-bottom: 2px solid #000;
-            padding-bottom: 5px;
-        }
+    /* Contact */
+    #contact p a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    #contact p a:hover {
+      text-decoration: underline;
+    }
 
-        .section p, .section li {
-            margin: 8px 0;
-            font-size: 16px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        .header h3 {
-            margin: 5px 0 0;
-            font-size: 18px;
-            color: #666;
-        }
-    </style>
+    /* Spacing so header doesn't overlap top */
+    .spacer {
+      height: 70px;
+    }
+  </style>
 </head>
 <body>
-    <div class="resume-container">
-        <div class="header">
-            <h1>SHIVANG GAUR</h1>
-            <h3>Master's Student, Department of Electrical Engineering, <a href="https://home.iitd.ac.in/">IIT Delhi</a></h3>
-        </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-        <div class="section">
-            <h2>Introduction</h2>
-            <p>I am a master's student with a keen interest in machine learning and have taken an Introduction to Machine Learning course in my curriculum and also doing an internship in the field of gait recognition using ML models. 
-                My goal is to build impactful solutions that integrate the principles of machine learning and advanced computation.
-                You can contact me through <a href="https://www.linkedin.com/in/shivang-gaur-0b8318201/">Linkedin</a></p>
-        </div>
+  <div class="spacer"></div> <!-- fixes overlap -->
 
-        <div class="section">
-            <h2>Subjects Chosen</h2>
-            <p>Introduction to Machine Learning, Mathematical Foundations for Computer Technology, Social Network Analysis, Computer Architecture, Operating System, Deep Learning for NLP, Extended Reality and Spatial Computing.</p>
-        </div>
+  <!-- Home -->
+  <div id="home" class="section">
+    <h1>SHIVANG GAUR</h1>
+    <h3>Master's Student, Department of Electrical Engineering, <a href="https://home.iitd.ac.in/">IIT Delhi</a></h3>
+    <p>I am a master's student with a keen interest in machine learning. 
+       My goal is to build impactful solutions that integrate the principles of machine learning and advanced computation.
+       You can connect with me on <a href="https://www.linkedin.com/in/shivang-gaur-0b8318201/">LinkedIn</a>.</p>
+  </div>
 
-        <div class="section">
-            <h2>Areas of Interest</h2>
-            <p>Machine Learning, Optimization, Social Network Analysis, and Entrepreneurship.</p>
-        </div>
+  <!-- Educational Background -->
+  <div id="education" class="section">
+    <h2>Educational Background</h2>
+    <p><b>M.Tech (Computer Technology)</b>, IIT Delhi – CGPA 7.26 (GATE CS AIR 554)</p>
+    <p><b>B.Tech (CSE)</b>, DCRUST Murthal – CGPA 7.87/10</p>
+    <p><b>Schooling</b>, DAVCPS – Class XII: 86.2%, Class X: CGPA 9.2</p>
+  </div>
 
-        <div class="section">
-            <h2>Educational Background</h2>
-            <p>Master's in Electrical Engineering, IIT Delhi (All India Rank 554 in GATE 2024).</p>
-            <p>Authored a conference paper: "A Metric-Driven Comparative Study of Text Summarization Models: Insights from State-of-the-art LLMs."</p>
-            <p>B.Tech in Computer Science and Engineering, DCRUST Murthal (CGPA 7.87/10).</p>
-        </div>
+  <!-- Thesis -->
+  <div id="research" class="section">
+    <h2>Major Project (Thesis)</h2>
+    <p><b>Title:</b> Multi-Person Identification from Geophone Signals via Spectrogram Analysis and Deep Learning</p>
+    <p><b>Supervisor:</b> Prof. Subrat Kar</p>
+    <ul>
+      <li>Designed framework combining spectrogram-based geophone signal processing, metadata integration, and deep learning with cross-entropy & triplet loss (~90% accuracy).</li>
+      <li>Implemented real-time inference on Raspberry Pi for human presence detection using geophones.</li>
+      <li>Enabled result streaming to local & cloud servers for remote monitoring.</li>
+    </ul>
 
-        <div class="section">
-            <h2>Major Project (Thesis)</h2>
-            <p><b>Title:</b> Multi-Person Identification from Geophone Signals via Spectrogram Analysis and Deep Learning</p>
-            <p><b>Supervisor:</b> Prof. Subrat Kar</p>
-            <ul>
-                <li>Designed framework combining spectrogram-based geophone signal processing, metadata integration, and deep learning with cross-entropy & triplet loss (90% accuracy in k-fold CV).</li>
-                <li>Implemented real-time inference on Raspberry Pi for human presence detection using geophones.</li>
-                <li>Enabled result streaming to local & cloud servers for remote monitoring.</li>
-            </ul>
-        </div>
+    <h2>Publications</h2>
+    <p>Gaur, S., Karunik, A. & Naik, S. (2024). "A Metric-Driven Comparative Study of Text Summarization Models: Insights from State-of-the-Art LLMs." <i>International Conference on AI & Speech Technology</i>. 
+      <a href="https://doi.org/10.1007/978-3-031-91340-2_16">DOI</a></p>
+  </div>
 
-        <div class="section">
-            <h2>Internships</h2>
-            <ul>
-                <li><b>NIELIT, Delhi (Feb 2024 – Jul 2024):</b> Training on AI including ML/DL, CV, NLP; worked on comparative study of text summarization models using LLMs.</li>
-                <li><b>FITT, IIT Delhi (Dec 2024 – Jan 2025):</b> Led team for gait data collection using geophones and cameras for 100+ subjects.</li>
-            </ul>
-        </div>
+  <!-- Projects -->
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Kernel-Level Gang Scheduler for HPC Workloads</b> – Custom Linux scheduling class (SCHED_GANG) for synchronized multi-core execution.</li>
+      <li><b>Resource Usage Tracker & Limiter</b> – Kernel syscalls to monitor and cap heap memory & open files; enforced limits via SIGKILL.</li>
+      <li><b>Text-to-SQL System</b> – Schema-aware T5-base model with rule-based post-processing (37.5% exact match accuracy).</li>
+      <li><b>Grammatical Error Correction System</b> – Developed using BART/T5 with LoRA achieving BLEU 90 and 58% exact match.</li>
+      <li><b>CRF Model for NER</b> – Implemented CRF with transition constraints; achieved 84% accuracy.</li>
+      <li><b>Tree-Structured Neural Network for MNIST</b> – Hierarchical NN correcting parent misclassifications, ~93% accuracy.</li>
+      <li><b>Pairwise Binary Classification for Image Similarity</b> – DL-based model for pairwise image classification (72% accuracy).</li>
+      <li><b>Summarizing PDFs using LangChain + Streamlit</b> – Interactive LLM-powered PDF summarization with FAISS search.</li>
+    </ul>
+  </div>
 
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><b>Kernel-Level Gang Scheduler for HPC Workloads</b> – Implemented custom Linux scheduling class (SCHED_GANG) for synchronized multi-core execution.</li>
-                <li><b>Resource Usage Tracker & Limiter</b> – Built kernel syscalls to monitor and cap heap memory & open file usage; enforced limits via SIGKILL.</li>
-                <li><b>Text-to-SQL System</b> – Built schema-aware T5-base model with rule-based post-processing (37.5% exact match accuracy).</li>
-                <li><b>Grammatical Error Correction System</b> – Developed using BART/T5 with LoRA achieving BLEU 90 and 58% exact match.</li>
-                <li><b>CRF Model for NER</b> – Implemented CRF with transition constraints; achieved 84% accuracy.</li>
-                <li><b>Tree-Structured Neural Network for MNIST</b> – Hierarchical NN correcting parent misclassifications, ~93% accuracy.</li>
-                <li><b>Pairwise Binary Classification for Image Similarity</b> – DL-based model for pairwise image classification (72% accuracy).</li>
-                <li><b>Summarizing PDFs using LangChain + Streamlit</b> – Interactive LLM-powered PDF summarization with FAISS search.</li>
-            </ul>
-        </div>
+  <!-- Internships -->
+  <div id="internships" class="section">
+    <h2>Internships</h2>
+    <ul>
+      <li><b>NIELIT, Delhi (Feb 2024 – Jul 2024):</b> Training on AI (ML/DL, CV, NLP); worked on comparative study of text summarization models.</li>
+      <li><b>FITT, IIT Delhi (Dec 2024 – Jan 2025):</b> Led team for gait data collection using geophones and cameras for 100+ subjects.</li>
+    </ul>
+  </div>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <p><b>Languages:</b> C, C++, Python, RISC-V</p>
-            <p><b>Libraries:</b> PyTorch, Hugging Face, Transformers, scikit-learn, LoRA/PEFT, ONNX</p>
-            <p><b>Tools:</b> Linux, Kaggle, Colab, Jupyter, SQL Server, Raspberry Pi, Logisim, Figma, Unreal Engine</p>
-            <p><b>Profiles:</b> <a href="https://shivanggaur.com/">Personal Webpage</a> | <a href="https://github.com/ShivangGaur">GitHub</a></p>
-        </div>
+  <!-- Skills -->
+  <div id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <p><b>Languages:</b> C, C++, Python, RISC-V</p>
+    <p><b>Libraries:</b> PyTorch, Hugging Face, Transformers, scikit-learn, LoRA/PEFT, ONNX</p>
+    <p><b>Tools:</b> Linux, Kaggle, Colab, Jupyter, SQL Server, Raspberry Pi, Logisim, Figma, Unreal Engine</p>
+    <p><b>Profiles:</b> <a href="https://shivanggaur.com/">Personal Webpage</a> | <a href="https://github.com/ShivangGaur">GitHub</a></p>
+  </div>
 
-        <div class="section">
-            <h2>Publications</h2>
-            <p>Gaur, S., Karunik, A. & Naik, S. (2024). "A Metric-Driven Comparative Study of Text Summarization Models: Insights from State-of-the-Art LLMs." <i>International Conference on AI & Speech Technology</i>. <a href="https://doi.org/10.1007/978-3-031-91340-2_16">DOI</a></p>
-        </div>
-    </div>
+  <!-- Contact -->
+  <div id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:shivang@example.com">shivang@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/shivang-gaur-0b8318201">Profile</a></p>
+    <p>GitHub: <a href="https://github.com/ShivangGaur">Projects</a></p>
+  </div>
 </body>
 </html>
-
