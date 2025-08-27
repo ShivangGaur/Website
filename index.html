@@ -14,35 +14,38 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow-y: auto;
         }
 
         .resume-container {
             background: white;
-            width: 80%;
-            max-width: 800px;
-            padding: 20px;
+            width: 85%;
+            max-width: 900px;
+            padding: 20px 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
+            margin: 20px;
         }
 
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .section h2 {
             margin: 0;
-            font-size: 24px;
+            font-size: 22px;
             border-bottom: 2px solid #000;
             padding-bottom: 5px;
         }
 
-        .section p {
-            margin: 10px 0 0;
+        .section p, .section li {
+            margin: 8px 0;
             font-size: 16px;
         }
 
         .header {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .header h1 {
@@ -73,8 +76,7 @@
 
         <div class="section">
             <h2>Subjects Chosen</h2>
-            <p>Introduction to Machine Learning, Mathematical Foundations for Computer Technology, Social Network Analysis, Computer Architecture, Operating System, Deep Learning for NLP, 
-                Extended Reality and Spatial Computing.</p>
+            <p>Introduction to Machine Learning, Mathematical Foundations for Computer Technology, Social Network Analysis, Computer Architecture, Operating System, Deep Learning for NLP, Extended Reality and Spatial Computing.</p>
         </div>
 
         <div class="section">
@@ -87,6 +89,52 @@
             <p>Master's in Electrical Engineering, IIT Delhi (All India Rank 554 in GATE 2024).</p>
             <p>Authored a conference paper: "A Metric-Driven Comparative Study of Text Summarization Models: Insights from State-of-the-art LLMs."</p>
             <p>B.Tech in Computer Science and Engineering, DCRUST Murthal (CGPA 7.87/10).</p>
+        </div>
+
+        <div class="section">
+            <h2>Major Project (Thesis)</h2>
+            <p><b>Title:</b> Multi-Person Identification from Geophone Signals via Spectrogram Analysis and Deep Learning</p>
+            <p><b>Supervisor:</b> Prof. Subrat Kar</p>
+            <ul>
+                <li>Designed framework combining spectrogram-based geophone signal processing, metadata integration, and deep learning with cross-entropy & triplet loss (90% accuracy in k-fold CV).</li>
+                <li>Implemented real-time inference on Raspberry Pi for human presence detection using geophones.</li>
+                <li>Enabled result streaming to local & cloud servers for remote monitoring.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Internships</h2>
+            <ul>
+                <li><b>NIELIT, Delhi (Feb 2024 – Jul 2024):</b> Training on AI including ML/DL, CV, NLP; worked on comparative study of text summarization models using LLMs.</li>
+                <li><b>FITT, IIT Delhi (Dec 2024 – Jan 2025):</b> Led team for gait data collection using geophones and cameras for 100+ subjects.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><b>Kernel-Level Gang Scheduler for HPC Workloads</b> – Implemented custom Linux scheduling class (SCHED_GANG) for synchronized multi-core execution.</li>
+                <li><b>Resource Usage Tracker & Limiter</b> – Built kernel syscalls to monitor and cap heap memory & open file usage; enforced limits via SIGKILL.</li>
+                <li><b>Text-to-SQL System</b> – Built schema-aware T5-base model with rule-based post-processing (37.5% exact match accuracy).</li>
+                <li><b>Grammatical Error Correction System</b> – Developed using BART/T5 with LoRA achieving BLEU 90 and 58% exact match.</li>
+                <li><b>CRF Model for NER</b> – Implemented CRF with transition constraints; achieved 84% accuracy.</li>
+                <li><b>Tree-Structured Neural Network for MNIST</b> – Hierarchical NN correcting parent misclassifications, ~93% accuracy.</li>
+                <li><b>Pairwise Binary Classification for Image Similarity</b> – DL-based model for pairwise image classification (72% accuracy).</li>
+                <li><b>Summarizing PDFs using LangChain + Streamlit</b> – Interactive LLM-powered PDF summarization with FAISS search.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <p><b>Languages:</b> C, C++, Python, RISC-V</p>
+            <p><b>Libraries:</b> PyTorch, Hugging Face, Transformers, scikit-learn, LoRA/PEFT, ONNX</p>
+            <p><b>Tools:</b> Linux, Kaggle, Colab, Jupyter, SQL Server, Raspberry Pi, Logisim, Figma, Unreal Engine</p>
+            <p><b>Profiles:</b> <a href="https://shivanggaur.com/">Personal Webpage</a> | <a href="https://github.com/ShivangGaur">GitHub</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Publications</h2>
+            <p>Gaur, S., Karunik, A. & Naik, S. (2024). "A Metric-Driven Comparative Study of Text Summarization Models: Insights from State-of-the-Art LLMs." <i>International Conference on AI & Speech Technology</i>. <a href="https://doi.org/10.1007/978-3-031-91340-2_16">DOI</a></p>
         </div>
     </div>
 </body>
